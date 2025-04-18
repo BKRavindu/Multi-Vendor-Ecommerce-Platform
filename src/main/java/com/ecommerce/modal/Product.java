@@ -2,6 +2,8 @@ package com.ecommerce.modal;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.CreationTimestamp;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -12,7 +14,7 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@EqualsAndHashCode
+//@EqualsAndHashCode
 public class Product {
 
     @Id
@@ -41,7 +43,6 @@ public class Product {
     @ManyToOne
     private Category category;
 
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private LocalDateTime createdAt;
 
     @ManyToOne

@@ -27,4 +27,10 @@ public class OrderItem {
     private Integer sellingPrice;
 
     private Long userId;
+
+    @ManyToOne
+    @JoinColumn(name = "order_id")
+    private Order order;
+
+
 }

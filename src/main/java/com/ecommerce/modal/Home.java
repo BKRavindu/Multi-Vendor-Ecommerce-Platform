@@ -3,16 +3,14 @@ package com.ecommerce.modal;
 
 import com.ecommerce.domain.HomeCategorySection;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import lombok.*;
 
 import java.util.List;
 
-@Entity
-@Getter
-@Setter
-@AllArgsConstructor
-@NoArgsConstructor
-@EqualsAndHashCode
+@Data
 public class Home {
 
     private List<HomeCategory> grid;
