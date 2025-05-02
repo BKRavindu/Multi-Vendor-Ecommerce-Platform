@@ -1,0 +1,9 @@
+### Post request to example server
+POST http://localhost:5454/auth/signup
+Content-Type: application/json
+
+{
+  "fullName": "Ane Smith",
+  "email": "Ane12@gmail.com"
+}
+###
